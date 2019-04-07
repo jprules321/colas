@@ -1,0 +1,8 @@
+<div><input type="text" [(ngModel)]="options"></div>
+<input type="file" (change)="getGribDatas($event)">
+<div *ngIf="datas.length > 0">
+    <p *ngFor="let data of datas ">
+        {{data}}
+    </p>
+</div>
+
